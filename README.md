@@ -1,93 +1,48 @@
 # algorithmReview
 
-# algorithmReview
+# Restaurant Review System - Group Lab
 
-The UML for this program, you should stick to this exact UML to make your program work.
+This repository contains the starter code and CSV data for the Restaurant Review System group lab.
 
-+------------------------------------------------------------------+
-|                            Restaurant                            |
-+------------------------------------------------------------------+
-| - name : String                                                  |
-| - rating : double                                                |
-| - menuItems : ArrayList<MenuItem>                                |
-+------------------------------------------------------------------+
-| + Restaurant()                                                   |
-| + Restaurant(name : String, rating : double)                     |
-| + getName() : String                                             |
-| + setName(name : String) : void                                  |
-| + getRating() : double                                           |
-| + setRating(rating : double) : void                              |
-| + getMenuItems() : ArrayList<MenuItem>                           |
-| + setMenuItems(menuItems : ArrayList<MenuItem>) : void           |
-| + addMenuItem(item : MenuItem) : void                            |
-| + toString() : String                                            |
-+------------------------------------------------------------------+
+Detailed assignment instructions, grading requirements, UML diagram, and group responsibilities are posted in Canvas.
 
-                    Restaurant HAS MANY MenuItems
-Restaurant ------------------------------------------------> MenuItem
+## Files Included
 
+* `RestaurantSystem.java`
+* `restaurants.csv`
 
+## Your Group Must Create
 
-+------------------------------------------------------------------+
-|                             MenuItem                             |
-+------------------------------------------------------------------+
-| - name : String                                                  |
-| - description : String                                           |
-| - price : double                                                 |
-| - ingredients : ArrayList<Ingredient>                            |
-+------------------------------------------------------------------+
-| + MenuItem()                                                     |
-| + MenuItem(name : String, description : String,                  |
-|            price : double)                                       |
-| + getName() : String                                             |
-| + setName(name : String) : void                                  |
-| + getDescription() : String                                      |
-| + setDescription(description : String) : void                    |
-| + getPrice() : double                                            |
-| + setPrice(price : double) : void                                |
-| + getIngredients() : ArrayList<Ingredient>                       |
-| + setIngredients(ingredients : ArrayList<Ingredient>) : void     |
-| + addIngredient(ingredient : Ingredient) : void                  |
-| + toString() : String                                            |
-+------------------------------------------------------------------+
+* `Restaurant.java`
+* `MenuItem.java`
+* `Ingredient.java`
 
-                    MenuItem HAS MANY Ingredients
-MenuItem ------------------------------------------------> Ingredient
+Your group will also complete the required algorithms in the main program.
 
+## Technologies Used
 
+* Java
+* ArrayLists
+* Objects and Classes
+* File Input
+* CSV Parsing
+* GitHub Classroom
+* Codespaces
 
-+------------------------------------------------------------------+
-|                            Ingredient                            |
-+------------------------------------------------------------------+
-| - name : String                                                  |
-| - calories : int                                                 |
-| - allergen : boolean                                             |
-+------------------------------------------------------------------+
-| + Ingredient()                                                   |
-| + Ingredient(name : String, calories : int,                      |
-|              allergen : boolean)                                 |
-| + getName() : String                                             |
-| + setName(name : String) : void                                  |
-| + getCalories() : int                                            |
-| + setCalories(calories : int) : void                             |
-| + getAllergen() : boolean                                        |
-| + setAllergen(allergen : boolean) : void                         |
-| + toString() : String                                            |
-+------------------------------------------------------------------+
+## Group Requirements
 
+* Work in groups of 3
+* All students should contribute commits to the repository
+* Record and post your group meeting in the Canvas group site
+* Comment your code appropriately
 
-+------------------------------------------------------------------+
-|                        RestaurantSystem                          |
-+------------------------------------------------------------------+
-| + main(args : String[]) : void                                   |
-| + loadRestaurants(filename : String)                             |
-|       : ArrayList<Restaurant>                                    |
-| + findRestaurant(restaurants : ArrayList<Restaurant>,            |
-|                  name : String) : Restaurant                     |
-| + printRestaurantReport(restaurants : ArrayList<Restaurant>)     |
-|       : void                                                     |
-| + getAveragePrice(restaurant : Restaurant) : double              |
-| + getHighestPrice(restaurant : Restaurant) : double              |
-| + getLowestPrice(restaurant : Restaurant) : double               |
-| + getAverageCalories(restaurant : Restaurant) : double           |
-+------------------------------------------------------------------+
+## Running the Program
+
+Make sure all required `.java` files and `restaurants.csv` are in the same folder before running the program.
+
+## Notes
+
+* Read the UML diagram carefully before starting
+* Test each class individually
+* Commit and push your work regularly
+* See Canvas for full instructions and grading rubric
